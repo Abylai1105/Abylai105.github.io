@@ -1,0 +1,688 @@
+HTML Code for Aray Website
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Aray Kozhakeldiyeva - MBA Professional</title>
+
+<style>
+
+* {
+
+margin: 0;
+
+padding: 0;
+
+box-sizing: border-box;
+
+}
+
+body {
+
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+line-height: 1.6;
+
+color: #333;
+
+background-color: #f9f9f9;
+
+}
+
+header {
+
+background: linear-gradient(135deg, #ff6b9d 0%, #ff8fab 100%);
+
+color: white;
+
+padding: 20px 0;
+
+box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+
+position: fixed;
+
+width: 100%;
+
+top: 0;
+
+z-index: 100;
+
+}
+
+nav {
+
+max-width: 1200px;
+
+margin: 0 auto;
+
+display: flex;
+
+justify-content: space-between;
+
+align-items: center;
+
+padding: 0 20px;
+
+}
+
+.logo {
+
+font-size: 24px;
+
+font-weight: bold;
+
+}
+
+nav ul {
+
+list-style: none;
+
+display: flex;
+
+gap: 30px;
+
+}
+
+nav a {
+
+color: white;
+
+text-decoration: none;
+
+font-weight: 500;
+
+transition: opacity 0.3s;
+
+}
+
+nav a:hover {
+
+opacity: 0.8;
+
+}
+
+.hero {
+
+background: linear-gradient(135deg, #ff6b9d 0%, #ff8fab 100%);
+
+color: white;
+
+padding: 160px 20px 80px;
+
+text-align: center;
+
+margin-top: 60px;
+
+}
+
+.hero h1 {
+
+font-size: 48px;
+
+margin-bottom: 10px;
+
+font-weight: 700;
+
+}
+
+.hero p {
+
+font-size: 24px;
+
+margin-bottom: 30px;
+
+opacity: 0.95;
+
+}
+
+.hero-photo {
+
+margin-top: 40px;
+
+}
+
+.hero-photo img {
+
+width: 200px;
+
+height: 200px;
+
+border-radius: 50%;
+
+border: 5px solid white;
+
+object-fit: cover;
+
+box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+
+}
+
+.container {
+
+max-width: 1200px;
+
+margin: 0 auto;
+
+padding: 0 20px;
+
+}
+
+section {
+
+padding: 80px 20px;
+
+background-color: white;
+
+margin-bottom: 20px;
+
+}
+
+section:nth-child(even) {
+
+background-color: #f9f9f9;
+
+}
+
+section h2 {
+
+font-size: 36px;
+
+color: #ff6b9d;
+
+margin-bottom: 30px;
+
+text-align: center;
+
+font-weight: 700;
+
+}
+
+section h3 {
+
+font-size: 22px;
+
+color: #ff6b9d;
+
+margin-top: 20px;
+
+margin-bottom: 15px;
+
+}
+
+.about-content {
+
+max-width: 800px;
+
+margin: 0 auto;
+
+font-size: 18px;
+
+line-height: 1.8;
+
+}
+
+.about-content p {
+
+margin-bottom: 20px;
+
+}
+
+.mission-grid {
+
+display: grid;
+
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+gap: 30px;
+
+margin-top: 40px;
+
+}
+
+.mission-card {
+
+background: white;
+
+padding: 30px;
+
+border-radius: 10px;
+
+box-shadow: 0 4px 15px rgba(255, 107, 157, 0.1);
+
+border-top: 4px solid #ff6b9d;
+
+}
+
+.mission-card h3 {
+
+margin-top: 0;
+
+}
+
+.mission-card p {
+
+color: #555;
+
+line-height: 1.7;
+
+}
+
+.education-content {
+
+max-width: 800px;
+
+margin: 0 auto;
+
+}
+
+.education-item {
+
+background: white;
+
+padding: 25px;
+
+margin-bottom: 20px;
+
+border-left: 4px solid #ff6b9d;
+
+border-radius: 5px;
+
+box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+
+}
+
+.education-item h3 {
+
+margin-top: 0;
+
+color: #ff6b9d;
+
+}
+
+.education-item p {
+
+color: #666;
+
+margin: 8px 0;
+
+}
+
+.contact-section {
+
+text-align: center;
+
+max-width: 600px;
+
+margin: 0 auto;
+
+}
+
+.contact-section p {
+
+font-size: 18px;
+
+margin-bottom: 30px;
+
+color: #555;
+
+}
+
+.contact-links {
+
+display: flex;
+
+justify-content: center;
+
+gap: 20px;
+
+flex-wrap: wrap;
+
+}
+
+.contact-btn {
+
+display: inline-block;
+
+background-color: #ff6b9d;
+
+color: white;
+
+padding: 12px 30px;
+
+border-radius: 25px;
+
+text-decoration: none;
+
+font-weight: 600;
+
+transition: background-color 0.3s, transform 0.2s;
+
+}
+
+.contact-btn:hover {
+
+background-color: #ff5584;
+
+transform: translateY(-2px);
+
+}
+
+footer {
+
+background-color: #333;
+
+color: white;
+
+text-align: center;
+
+padding: 30px 20px;
+
+font-size: 14px;
+
+}
+
+.divider {
+
+height: 3px;
+
+background: linear-gradient(90deg, #ff6b9d 0%, transparent 50%, #ff6b9d 100%);
+
+margin: 0;
+
+}
+
+@media (max-width: 768px) {
+
+nav ul {
+
+gap: 15px;
+
+font-size: 14px;
+
+}
+
+.hero h1 {
+
+font-size: 32px;
+
+}
+
+.hero p {
+
+font-size: 18px;
+
+}
+
+section h2 {
+
+font-size: 28px;
+
+}
+
+.mission-grid {
+
+grid-template-columns: 1fr;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<nav>
+
+<div class="logo">Aray</div>
+
+<ul>
+
+<li><a href="#about">About</a></li>
+
+<li><a href="#mission">Mission</a></li>
+
+<li><a href="#education">Education</a></li>
+
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<section class="hero">
+
+<h1>Aray Kozhakeldiyeva</h1>
+
+<p>MBA Professional | Education Advocate | ZELIS</p>
+
+<div class="hero-photo">
+
+<img src="aray.jpg" alt="Aray Kozhakeldiyeva">
+
+</div>
+
+</section>
+
+<div class="divider"></div>
+
+<section id="about">
+
+<div class="container">
+
+<h2>About Me</h2>
+
+<div class="about-content">
+
+<p>
+
+Welcome to my professional portfolio. I am an MBA graduate with a passion for education,
+
+empowerment, and creating meaningful opportunities for those around me.
+
+</p>
+
+<p>
+
+Currently, I work as a professional at ZELIS, an innovative American company where I contribute
+
+to meaningful projects and continue to grow professionally. My career is driven by a commitment
+
+to excellence and a desire to make a positive impact.
+
+</p>
+
+<p>
+
+Beyond my professional role, I am deeply committed to giving back to my community and helping
+
+others achieve their dreams. Education and personal development are at the core of everything I do.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<div class="divider"></div>
+
+<section id="mission">
+
+<div class="container">
+
+<h2>My Mission & Initiatives</h2>
+
+<div class="mission-grid">
+
+<div class="mission-card">
+
+<h3>Supporting Single Mothers</h3>
+
+<p>
+
+I provide comprehensive English language support to single mothers, empowering them with
+
+the language skills needed to advance their careers and provide better opportunities for
+
+their families.
+
+</p>
+
+</div>
+
+<div class="mission-card">
+
+<h3>University Admission Coaching</h3>
+
+<p>
+
+I mentor talented young people from Kazakhstan through the international university
+
+admission process, helping them gain acceptance to top universities abroad and achieve
+
+their academic dreams.
+
+</p>
+
+</div>
+
+<div class="mission-card">
+
+<h3>Professional Development</h3>
+
+<p>
+
+Through my work at ZELIS and my consulting efforts, I help professionals develop the skills
+
+and knowledge needed to succeed in today's competitive global marketplace.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<div class="divider"></div>
+
+<section id="education">
+
+<div class="container">
+
+<h2>Education & Experience</h2>
+
+<div class="education-content">
+
+<div class="education-item">
+
+<h3>Master of Business Administration (MBA)</h3>
+
+<p><strong>Status:</strong> Graduate</p>
+
+<p>
+
+My MBA has provided me with advanced knowledge in business strategy, management,
+
+and organizational development.
+
+</p>
+
+</div>
+
+<div class="education-item">
+
+<h3>Professional Role at ZELIS</h3>
+
+<p><strong>Company:</strong> ZELIS (USA-based)</p>
+
+<p>
+
+Contributing to innovative projects and helping drive business growth in a dynamic
+
+international environment.
+
+</p>
+
+</div>
+
+<div class="education-item">
+
+<h3>Community Impact Programs</h3>
+
+<p><strong>Focus:</strong> Education & Empowerment</p>
+
+<p>
+
+Actively involved in mentoring and supporting individuals from Kazakhstan seeking
+
+international educational opportunities.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<div class="divider"></div>
+
+<section id="contact">
+
+<div class="container">
+
+<h2>Get In Touch</h2>
+
+<div class="contact-section">
+
+<p>
+
+Interested in collaboration, mentoring, or just want to connect?
+
+I'd love to hear from you!
+
+</p>
+
+<div class="contact-links">
+
+<a href="mailto:aray@example.com" class="contact-btn">Email Me</a>
+
+<a href="https://linkedin.com" class="contact-btn">LinkedIn</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>&copy; 2026 Aray Kozhakeldiyeva. All rights reserved.</p>
+
+<p>Made with care for the future.</p>
+
+</footer>
+
+</body>
+
+</html>
